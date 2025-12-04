@@ -1,9 +1,7 @@
 /*
 Screwed Purple theme by Jaiden W
-Updated 2022/05/05
+Updated 2022/07/04
 Obey The Fist!
-
-Recolored and Renamed by Panics
 */
 
 
@@ -13,13 +11,11 @@ Recolored and Renamed by Panics
 @keyframes slidein { 0% { top: -100%; padding-top:60px; } 50% { top: 0%; padding-top:55px; } 100% { padding-top:32px; } }
 @keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
 #tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
-html { 
-	background-image:url("../Images/Shadow-Red_html.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+html {
+    background-image:url('./background-html.png');
 }
 body {
-    background: linear-gradient(-45deg, #000000aa, #000000bb, #000000aa, #000000aa);
+    background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     height:100vh;
@@ -28,17 +24,15 @@ body {
 .bodyTab { animation: fadein 200ms; }
 
   /*Scroll Bar*/
-div ::-webkit-scrollbar { width: 5px; background-color: #000000;}
-div ::-webkit-scrollbar-thumb { width: 5px; background-color: #ff0000; }
-div ::-webkit-scrollbar-thumb:hover { background-color: #ff0000; }
+div ::-webkit-scrollbar { width: 5px; background-color: #20023e;}
+div ::-webkit-scrollbar-thumb { width: 5px; background-color: #8000ff; }
+div ::-webkit-scrollbar-thumb:hover { background-color: #952efb; }
 
   /*Buttons/links*/
-a { color: #000000; }
+a { color: #fbff00; }
 a:hover { color: #ffffff; }
-
-.provisionSetting{
-	height: auto !important;
-}
+.bgGreen { background-color: #8000ff; border: 1px solid #8000ff; }
+.bgGreen:hover { background-color: #bc78ff; }
 
 /*login box*/
 #loginContainer button { width: 100%;  border-radius:3px;}
@@ -47,10 +41,10 @@ a:hover { color: #ffffff; }
     border-width: 4px 4px 4px 4px;
     border-style: solid;
     border-color: #000000dd;
-    outline: 3px solid #540000;
-    background-image: linear-gradient(#af000099, #52050599);
+    outline: 3px solid #8000ff;
+    background-image: linear-gradient(#8000ff99, #2c055299);
     background-color: transparent;
-    animation: slidein 1.5s;
+    animation: slidein 1s;
 }
 #loginContainer * {
     animation: fadein 600ms;
@@ -60,36 +54,32 @@ a:hover { color: #ffffff; }
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     border: 3px solid #0b00169c;
-    outline: 3px solid #620b0b;
+    outline: 3px solid #8000ff;
     border-radius: 3px;
-}
-
-#forgotLogin{
-	display: none;
 }
 
 /* Branding*/
 .ModuleAuthor::after{ content:' (With Screwed Purple - By Jaiden W)'; }
 
 /*Side Menu*/
-.itemList .item:hover { background-color: #cb0f0f; }
-.itemList .item.selected { border-right: 4px solid #970000; }
-.itemList .item:active { background-color: #580909; }
-.sideItemList { background-color: #0a0a0a5c; }
+.itemList .item:hover { background-color: #423369; }
+.itemList .item.selected { border-right: 4px solid #8000ff; }
+.itemList .item:active { background-color: #470a83; }
+.sideItemList { background-color: #25065775; }
 #sideMenuContainer, .subMenuWell { top:48px; }
 #sideMenuContainer { background: linear-gradient(180deg,#333333dd 50%, #222222dd); }
 .subMenuWell { background: linear-gradient(180deg,#333333 50%, #222222); }
-#barTop #tabInfo { margin-left: 16px; color: #ff0000; }
+#barTop #tabInfo { margin-left: 16px; color: #a041ff; }
 #barTop, #barBottom, #userInfo:hover { background-color: #333333dd; }
 #userInfo { background:none; }
-#sideMenu a:active { background-color: #442626; }
-#sideMenu a.selected { border-right: 4px solid #970000; }
+#sideMenu a:active { background-color: #352644; }
+#sideMenu a.selected { border-right: 4px solid #8000ff; }
 #sideMenu { top: 0px; }
-#sideMenu a.selected { background-color: #ff00002b; border-radius: 0px 0 0 8px; }
+#sideMenu a.selected { background-color: #8000ff2b; border-radius: 0px 0 0 8px; }
 .menuTitle {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: bolder;
-    color: #ff0000;
+    color: #a041ff;
     font-size: 24pt;
     padding: 20px 16px 20px 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -100,7 +90,7 @@ a:hover { color: #ffffff; }
     height: 24px;
     padding: 12px 0.5em 12px 0;
     float: left;
-    filter: invert(20%) sepia(44%) saturate(430) hue-rotate(0deg) brightness(145%) contrast(90%);
+    filter: invert(20%) sepia(52%) saturate(888) hue-rotate(270deg) brightness(130%) contrast(173%);
 }
 #sideMenu a {
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
@@ -110,7 +100,7 @@ a:hover { color: #ffffff; }
     padding: 0;
     padding: 0.1em 1em 0.1em 0.7em;
     color: #fff;
-    /*
+    /* 
     font-size: 130%;
     display: block;
     vertical-align: middle; 
@@ -139,13 +129,13 @@ a:hover { color: #ffffff; }
 .scheduleTriggerInfo {
     width: 100%;
     border-radius: 4px;
-    border: 1px solid #ff0000;
+    border: 1px solid #8000ff;
     margin-top: 8px;
-    background-color: #00000055;
+    background-color: #31075c;
     overflow: hidden;
 }
 .scheduleTriggerDescription {
-    background-color: #850000;
+    background-color: #8000ff;
     padding: 8px;
 }
 .scheduleTriggerHeaderItem .scheduleHeader {
@@ -158,7 +148,7 @@ a:hover { color: #ffffff; }
     height: 40px;
     margin: -8px -8px 0 0;
     border-radius: 0 0 0 4px;
-    border: 1px solid #341111;
+    border: 1px solid #b571f9;
     border-top: none;
     border-right: none;
     overflow: hidden;
@@ -177,7 +167,7 @@ a:hover { color: #ffffff; }
 .notificationProgessContainer {
     width: 100%;
     height: 16px;
-    border: 1px solid #ff0000;
+    border: 1px solid #8000ff;
     margin-top: 4px;
     overflow: hidden;
     position: relative;
@@ -185,7 +175,7 @@ a:hover { color: #ffffff; }
 .notificationProgressBar {
     height: 100%;
     width: 0;
-    background-color: #ff0000;
+    background-color: #8000ff;
     transition: width 0.5s ease-in-out;
     margin-left: 0;
     overflow: visible;
@@ -193,13 +183,15 @@ a:hover { color: #ffffff; }
 }
 
 /* Server Entry*/
-.ServerGroup.Online .ServerGroupHeader { background: linear-gradient(to right, #bf0000 0%, rgba(0, 0, 0, 0.3) 85%); }
-.desktopContextMenu.desktopContextMenu .buttonListSeparator { border-bottom: 1px solid #bf0000 !important; }
-.desktopContextMenu { background: #320707 !important; border: 2px solid #bf0000; }
+.ServerGroup.Online .ServerGroupHeader { background: linear-gradient(to right, #8000ff 0%, rgba(0, 0, 0, 0.3) 85%); }
+.desktopContextMenu.desktopContextMenu .buttonListSeparator { border-bottom: 1px solid #8000ff!important; }
+.desktopContextMenu { background: #290e44!important; border: 2px solid #8000ff; }
 .ServerEntry .ServerEntryInfo tr { background:#00000088; }
 .ServerEntry .ServerEntryInfo tr:nth-child(2n) { background: #00000038; }
-.ServerEntry.NewServerEntry { background-color: #cd3737 !important; text-align: center; }
-.ServerEntry:hover { border: 1px solid #ff0000 !important; }
+.ServerEntry.NewServerEntry { background-color: #8000ff!important; text-align: center; }
+.ServerEntry:hover { border: 1px solid #8000ff!important; }
+.ServerEntryStatus.bgGreen { background-color: #6600cc; border: 1px solid #6d00da; }
+.ServerEntryStatus.bgGreen:hover { background-color: #8000ff; }
 .ServerGroup{ background: #00000061; }
 .ServerEntry .ServerEntryImage {
     width: 100%;
@@ -208,28 +200,28 @@ a:hover { color: #ffffff; }
     z-index: -1;
     background-size: cover;
     filter: brightness(0.55);
-    background-color: #ff0000EE;
+    background-color: #8000ffEE;
 }
 .wizardTab .wizardContents {
-    background-color: #420000;
-    border-bottom: 8px solid #ff0000;
+    background-color: #36006b;
+    border-bottom: 8px solid #8000ff;
     box-shadow: 2px 2px 12px rgb(0 0 0 / 50%);
 }
 .wizardTab .wizardContents h2 {
     margin: -16px;
     padding: 8px 16px 8px 16px;
     width: 100%;
-    background-color: #bf0000;
+    background-color: #8000ff;
     margin-bottom: 16px;
 }
 .provisionSetting img {
     width: 98%;
-    border: 1px solid #bf0000;
+    border: 1px solid #8000ff;
     box-shadow: 0px 0px 5px black;
 }
 .ServerGroup.Online .ServerGroupHeader {
-    background: linear-gradient(to right, #ff0000 0%, #7b1a1a 85%)!important;
-    border: 1px solid #000000;
+    background: linear-gradient(to right, #8000ff 0%, #4b1a7b 85%)!important;
+    border: 1px solid #8000ff;
     border-radius: 4px;
     box-shadow: 0px 0px 10px black;
 }
@@ -241,15 +233,15 @@ a:hover { color: #ffffff; }
     filter: brightness(0.90);
 }
 .ServerEntry .ServerEntryHeader {
-    background-color: #a10b13 !important;
-    padding: 4px !important;
-    margin: 2px !important;
-    min-height: 0px !important;
+    background-color: #8000ffba!important;
+    padding: 4px!important;
+    margin: 4px!important;
+    min-height: 0px!important;
     margin-bottom: 2px;
     position: relative;
     text-align: center;
     border-radius: 4px;
-    border: 1px solid #00000099;
+    border: 3px solid #8000ff99;
 }
 .ServerEntry .ServerEntryHeader h4 {
     margin: 0;
@@ -263,20 +255,20 @@ a:hover { color: #ffffff; }
 /* dropdown menu*/
 option{ background:#202020; color:#fff;}
 /* Input boxes*/
-input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea { background: #00000087; }
+input[type="text"], input[type="password"], input[type="url"], input[type="number"], input[type="email"], input[type="search"], select, textarea { background: #0000001c; }
 
 /* Input checkbox slider*/
-input[type=checkbox]:checked + span { background-color: #ff0000; }
+input[type=checkbox]:checked + span { background-color: #8000ff; }
 input[type=checkbox]:checked + span::after { background-color: #333333; }
 input[type=checkbox]:hover + span { border-color: #00000000; }
-button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #ff0000; }
+button:hover, input[type=button]:hover, input[type=submit]:hover, .button:hover, button:active, input[type="button"]:active, input[type="submit"]:active, .button:active  { background-color: #8000ff; }
 button, input[type=button], input[type=submit], .button {
     background-color: #01010247;
     color: white;
     font-family: "roboto-light", "Segoe UI Light", "Segoe UI", Calibri, Verdana, Geneva, "DejaVu Sans", sans-serif;
     font-weight: lighter;
     font-size: larger;
-    border: 1px solid #ff0000;
+    border: 1px solid #8000ff;
     min-width: 96px;
     cursor: pointer;
     outline: none;
@@ -293,21 +285,21 @@ button, input[type=button], input[type=submit], .button {
     font-size: 10px;
     position: relative;
     text-indent: -9999em;
-    border-top: 1.1em solid rgba(155, 0, 0, 0.2)!important;
-    border-right: 1.1em solid #ff0000;
-    border-bottom: 1.1em solid rgba(155, 0, 0, 0.2)!important;
-    border-left: 1.1em solid #ff0000;
+    border-top: 1.1em solid rgba(128, 0, 255, 0.2)!important;
+    border-right: 1.1em solid #8000ff;
+    border-bottom: 1.1em solid rgba(128, 0, 255, 0.2)!important;
+    border-left: 1.1em solid #8000ff;
     -webkit-animation: load8 1s infinite linear!important;
     animation: load8 1s infinite linear!important;
     box-shadow: 0px 0px 20px #00000085, inset 0px 0px 20px #00000085;
 }
 
 /*event time*/
-.scheduleTriggerTask { padding: 8px; border-bottom: 1px solid #ff0000; }
+.scheduleTriggerTask { padding: 8px; border-bottom: 1px solid #8000ff; }
 .iconButton:hover { background-color: #0000004d; }
-.iconButton:active { background-color: #ff0000; }
-.timeSegment.selected { background-color: #ff0000; }
-.timeSegment:hover { padding:10px; border:1px solid #ff0000; }
+.iconButton:active { background-color: #8000ff; }
+.timeSegment.selected { background-color: #8000ff; }
+.timeSegment:hover { padding:10px; border:1px solid #8000ff; }
 .timeSegment {
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
@@ -325,13 +317,13 @@ button, input[type=button], input[type=submit], .button {
   /*file manager*/
 .fmPathSegment:hover { background-color: #a858f7!important; }
 .fmPathSegment:hover::after { border-left-color: #a858f7!important; }
-.fileManagerEntry:hover { background: #ff000061!important; }
+.fileManagerEntry:hover { background: #8000ff61!important; }
 .fmPathSegment::after {
     width: 0;
     height: 0;
     border-top: 16px solid transparent;
     border-bottom: 16px solid transparent;
-    border-left: 10px solid #ff0000!important;
+    border-left: 10px solid #8000ff!important;
     content: ' ';
     /* 
     display: inline-block;
@@ -344,7 +336,7 @@ button, input[type=button], input[type=submit], .button {
     display: inline-block;
     cursor: pointer;
     font-size: 12pt;
-    background-color: #ff0000!important;
+    background-color: #8000ff!important;
     padding-left: 20px;
     line-height: 32px;
     margin-left: -4px;
@@ -359,7 +351,7 @@ button, input[type=button], input[type=submit], .button {
     border-radius: 5px;
     background-color: #00000061;
     box-shadow: inset 0 2px 4px rgb(255 255 255 / 5%), inset 0 -2px 4px rgb(0 0 0 / 20%), 0 4px 4px rgb(0 0 0 / 30%);
-    border: 2px solid #ff000099;
+    border: 2px solid #8000ff99;
 }
 .settingsGroup .groupBody .settingContainer .settingWarning {
     font-size: 8pt;
@@ -376,7 +368,7 @@ button, input[type=button], input[type=submit], .button {
     border-radius: 3px;
     padding: 10px;
     text-align: center;
-    background: #ff0000;
+    background: #8000ff;
 }
 .settingsGroup .groupBody .settingContainer .listEditButton {
     float: right;
@@ -389,8 +381,44 @@ button, input[type=button], input[type=submit], .button {
     border-radius: 3px;
     padding: 10px;
     text-align: center;
-    background: #ff0000;
+    background: #8000ff;
     white-space: nowrap;
+}
+#bgtext { position: absolute; bottom:50px; }
+
+
+
+@media screen and (max-width: 660px), screen and (min-resolution: 100dpi) and (max-width: 980px), screen and (min-resolution: 150dpi) and (max-width: 1440px), screen and (min-resolution: 300dpi) and (max-width: 2000px){
+    #bgtext {
+        position: absolute;
+        bottom: -83px!important;
+        right: 0px!important;
+        left: -173px!important;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #bgtext {
+        transform: rotate(-90deg) translate(256px, -54px);
+        width: 220px;
+        transform-origin: top right;
+        border-top: none;
+        padding: 0px!important;
+        bottom: -35px!important;
+        text-align: right;
+        width: 236px;
+        right: 9px;
+
+    }
+    #updateAvailable button {
+        background-color: transparent;
+        border-color: white;
+        height: 32px;
+        border-radius: 4px;
+        margin: 0px 4px;
+        font-size: 11pt;
+    }
 }
 
 /* mobile fixes*/
@@ -401,4 +429,3 @@ button, input[type=button], input[type=submit], .button {
     #sideMenuContainer { background: linear-gradient(180deg,#333333 50%, #222222); overflow:hidden; }
     #barTop, #barBottom { background-color: #333333; }
 }
-

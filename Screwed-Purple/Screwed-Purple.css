@@ -12,7 +12,7 @@ Obey The Fist!
 @keyframes fadein { 0% { opacity: 0; } 10% { opacity: 0.1;  } 20% { opacity: 0.2;  } 30% { opacity: 0.3;  } 40% { opacity: 0.4;  } 50% { opacity: 0.5;  } 60% { opacity: 0.6;  } 70% { opacity: 0.7;  } 80% { opacity: 0.8;  } 90% { opacity: 0.9;  } 100% { opacity: 1; } }
 #tab_ADSModule_Instances, #mainBody, .bodyTab { background:none; }
 html {
-    background-image:url("../Images/Screwed-Purple_html.png");
+    background-image:url('./background-html.png');
 }
 body {
     background: linear-gradient(-45deg, #2f005fAA, #37006fBB, #430088AA, #2f005fAA);

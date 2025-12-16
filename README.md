@@ -25,12 +25,18 @@ info.json
 }
 ```
 
-`Name` is the name of the theme exactly matching the theme directory and css file name.
+`Name` is the name of the theme exactly matching the theme directory and css file name. It may contain spaces but these will be converted to dashes and with dashes this must then correspond to the directory and css filenames.
+
 `Version` is a semver version, this isn't currently used for anything important.
+
 `UpdatedDate` is the date the theme was updated in YYYY/MM/DD format.
+
 `Description` A user-facing description of the theme and how it looks, and who may benefit from it.
+
 `URL` is an address for the author (for example a personal website, github page, etc)
+
 `Author` is the name(s) of the author(s), comma separated if there are multiple.
+
 `Tags` is a list of user-defined tags. All third party themes must have the tag "Contributor", other tags can include things like "Dark", "Light", "Accessible", or any other tags which define the theme. These tags are used to build the top-level category lists within the store page.
 
 preview.png screenshots

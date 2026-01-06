@@ -3,6 +3,9 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.tabHeader.active {
+  background-color: #c38300 !important;
+}
 .sideItemList {
   background-color: transparent;
   backdrop-filter: blur(10px) brightness(133%);
@@ -15,6 +18,15 @@
   background-size: 100% 50%;
   background-repeat: no-repeat;
   text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#loginContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
 }
 #AMP_Core_PrimaryTask {
   backdrop-filter: blur(10px) brightness(133%);
@@ -33,6 +45,7 @@
   background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #c38300;
 }
 .analyticsSection,
 .ServerGroupHeader {
@@ -75,18 +88,17 @@ input[type=button] {
   background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%);
   box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
   border: 1px solid rgba(230, 230, 230, 0.2);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.2) !important;
   border-radius: 8px;
   outline: 1px solid rgba(0, 0, 0, 0.3);
   font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
   color: white;
   text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   font-size: 12pt;
   padding: 4px 12px;
+  background-size: 100%;
 }
 button:hover,
 input[type=button]:hover {
@@ -98,7 +110,32 @@ input[type=button]:active {
   background-color: rgba(230, 230, 230, 0.2);
   box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
 }
-.iconButton {
+button.slimButton,
+input[type=button].slimButton {
+  padding: 2px 6px;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton {
+  background-color: #c38300;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.3) 100%);
+  background-size: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton:hover {
+  background-color: #f6a500;
+  box-shadow: 0 0 8px #ffffff80;
+}
+.settingsGroup .groupBody .settingContainer .listEditButton:active {
+  background-color: #906100;
+  box-shadow: 0 0 8px #00000080;
+}
+.scheduleTriggerHeaderItem .scheduleHeader {
+  color: white;
+  font-size: 14pt;
+  margin-bottom: 8px;
+}
+.iconButton,
+.toolIconButton {
   backdrop-filter: blur(10px) brightness(133%);
   box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
   background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
@@ -130,7 +167,7 @@ input[type=button]:active {
   background-color: transparent;
 }
 .settingsGroup .groupBody .settingContainer {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px) brightness(133%);
   box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
   background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
@@ -143,6 +180,19 @@ input[type=button]:active {
 }
 .settingsGroup .groupBody .settingContainer .settingLabel .settingDescription {
   color: white;
+}
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=text],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=password],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=url],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=number],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=email],
+.settingsGroup .groupBody .settingContainer .settingLabel input[type=search],
+.settingsGroup .groupBody .settingContainer .settingLabel select,
+.settingsGroup .groupBody .settingContainer .settingLabel textarea,
+.settingsGroup .groupBody .settingContainer .settingLabel .popupTrigger {
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+  border-radius: 16px;
+  padding-left: 12px;
 }
 .scheduleTriggerDescription {
   background-color: transparent;
@@ -158,6 +208,7 @@ input[type=button]:active {
   background-repeat: no-repeat;
   border-radius: 16px;
   padding: 8px;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
 }
 .scheduleTriggerTask {
   border-bottom: 1px solid white;

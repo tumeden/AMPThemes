@@ -1,0 +1,177 @@
+.glassWidget(@color, @interactive) {
+    background-color: @color;
+    background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%);
+    box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+    border: 1px solid darken(@color, 10%);
+    border-radius: 8px;
+    outline: 1px solid rgba(0,0,0,0.3);
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & when (@interactive = true) {
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            background-color: lighten(@color, 10%);
+            box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
+        }
+
+        &:active {
+            background-color: darken(@color, 10%);
+            box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
+        }
+    }
+}
+
+.glowTop(@size) {
+    background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+    background-size: 100% @size;
+    background-repeat: no-repeat;
+}
+
+.glassBody() {
+    backdrop-filter: blur(10px) brightness(133%);
+    box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+}
+
+.tabHeader {
+    .glowTop(100%);
+}
+
+.rounded() {
+    border-radius: 16px;
+}
+
+.textShadow() {
+    text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+
+.sideItemList {
+    background-color: transparent;
+    .glassBody();
+}
+
+.DisplayMetricHeader {
+    .glassBody();
+    .glowTop(50%);
+    .textShadow();
+}
+
+#AMP_Core_PrimaryTask  {
+    .glassBody();
+    .glowTop(100%);
+    .textShadow();
+}
+
+#sideMenuContainer {
+    .glowTop(96px);
+}
+
+#sideMenu a.selected {
+    .glowTop(100%);
+}
+
+.analyticsSection, .ServerGroupHeader {
+    .glassBody();
+    .glowTop(72px);
+    .rounded();
+}
+
+.StoreCard {
+    background-color: transparent !important;
+    .glassBody();
+    .glowTop(64px);
+    .textShadow();
+}
+
+body {
+    background-image: url(/Images/Frutiger.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#bgtext {
+    //background gradient transparent -> black left -> right
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+}
+
+body, .bodyTab, .tabHeaderContainer {
+    background-color: transparent;
+}
+
+#mainBody {
+    background-color: transparent;
+}
+
+button, input[type=button] {
+    .glassWidget(rgba(255, 255, 255, 0.2), true);
+    font-size: 12pt;
+    padding: 4px 12px;
+}
+
+.iconButton {
+    .glassBody();
+    .glowTop(32px);
+    background-position: top center;
+}
+
+.bgRed, .bgGreen {
+    border: none;
+}
+
+#statusActions > div {
+    display: block;
+    .glassBody();
+    .glowTop(64px);
+    .rounded();
+    padding: 8px 16px;
+    .textShadow();
+}
+
+#sideMenuContainer {
+    background-color: transparent;
+    .glassBody();
+}
+
+.subMenuWell {
+    background-color: transparent;
+}
+
+.settingsGroup .groupBody .settingContainer {
+    background-color: transparent;
+    .glassBody();
+    .glowTop(64px);
+    .rounded();
+
+    .settingLabel {
+        .settingDescription {
+            color: white;
+        }
+        .textShadow();
+    }
+
+}
+
+.scheduleTriggerDescription {
+    background-color: transparent;
+    border: none;
+}
+
+.scheduleTriggerInfo {
+    background-color: transparent;
+    border: none;
+    .glassBody();
+    .glowTop(48px);
+    .rounded();
+    padding: 8px;
+}
+
+.scheduleTriggerTask {
+    border-bottom: 1px solid white;
+}

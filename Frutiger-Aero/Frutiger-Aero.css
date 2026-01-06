@@ -1,0 +1,164 @@
+﻿.tabHeader {
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.sideItemList {
+  background-color: transparent;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+}
+.DisplayMetricHeader {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#AMP_Core_PrimaryTask {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#sideMenuContainer {
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 96px;
+  background-repeat: no-repeat;
+}
+#sideMenu a.selected {
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.analyticsSection,
+.ServerGroupHeader {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 72px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.StoreCard {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+body {
+  background-image: url(/Images/Frutiger.webp);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bgtext {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+body,
+.bodyTab,
+.tabHeaderContainer {
+  background-color: transparent;
+}
+#mainBody {
+  background-color: transparent;
+}
+button,
+input[type=button] {
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  border: 1px solid rgba(230, 230, 230, 0.2);
+  border-radius: 8px;
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 12pt;
+  padding: 4px 12px;
+}
+button:hover,
+input[type=button]:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
+}
+button:active,
+input[type=button]:active {
+  background-color: rgba(230, 230, 230, 0.2);
+  box-shadow: 2px 4px 8px #ffffff80 inset, -2px 4px 8px #ffffff80 inset, 0 9px 9px #000000aa;
+}
+.iconButton {
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 32px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.bgRed,
+.bgGreen {
+  border: none;
+}
+#statusActions > div {
+  display: block;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 8px 16px;
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+#sideMenuContainer {
+  background-color: transparent;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+}
+.subMenuWell {
+  background-color: transparent;
+}
+.settingsGroup .groupBody .settingContainer {
+  background-color: transparent;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 64px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.settingsGroup .groupBody .settingContainer .settingLabel {
+  text-shadow: 0px 0px 4px #00000080, 0px 2px 2px #000;
+}
+.settingsGroup .groupBody .settingContainer .settingLabel .settingDescription {
+  color: white;
+}
+.scheduleTriggerDescription {
+  background-color: transparent;
+  border: none;
+}
+.scheduleTriggerInfo {
+  background-color: transparent;
+  border: none;
+  backdrop-filter: blur(10px) brightness(133%);
+  box-shadow: 2px 2px 8px #ffffff50 inset, -2px 2px 8px #ffffff50 inset, 0 5px 5px #00000050;
+  background-image: linear-gradient(#ffffffcc 0%, #ffffff20 50%, #00000020 51%, #00000000 100%), radial-gradient(#ffffff60 0%, #ffffff00 80%, #ffffff00 100%);
+  background-size: 100% 48px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 8px;
+}
+.scheduleTriggerTask {
+  border-bottom: 1px solid white;
+}

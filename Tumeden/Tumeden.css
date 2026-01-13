@@ -92,10 +92,13 @@ body {
 /* Top Bar */
 #barTop {
     border-bottom: 1px solid #30363d;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
     z-index: 1;
     height: 48px;
-    padding: 4px 0 4px 250px;
-    right: 32px;
+    padding: 4px 0 4px 0;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -1344,4 +1347,3 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #21262d;
 }
-
